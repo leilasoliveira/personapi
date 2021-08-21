@@ -24,3 +24,9 @@ Após executar o comando acima, basta apenas abrir o seguinte endereco e visuali
 ```
 http://localhost:8080/api/v1/people
 ```
+
+Para execução no Heroku, acessas o seguinte endereço:
+
+```
+http://peopleapi-leilafarias.herokuapp.com
+```
