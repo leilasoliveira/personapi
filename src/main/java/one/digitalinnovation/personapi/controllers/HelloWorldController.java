@@ -10,7 +10,7 @@ public class HelloWorldController {
 
     @GetMapping
     private String helloWorld() {
-        return "Olá Heroku! Sou a aplicação Olho no Preço!";
+        return "Olá Heroku! Sou a aplicação PersonAPI!";
     }
 
 }
