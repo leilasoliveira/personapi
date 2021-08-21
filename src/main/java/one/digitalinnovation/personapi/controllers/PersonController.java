@@ -1,5 +1,6 @@
 package one.digitalinnovation.personapi.controllers;
 
+import lombok.AllArgsConstructor;
 import one.digitalinnovation.personapi.dto.MessageResponseDTO;
 import one.digitalinnovation.personapi.dto.request.PersonDTO;
 import one.digitalinnovation.personapi.service.PersonService;
@@ -13,14 +14,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/people")
+@AllArgsConstructor(onConstructor = @__(@Autowired)) // vantagem de injetar assim é que facilita os testes unitarios
 public class PersonController {
 
     private PersonService personService;
-
-    @Autowired
-    public PersonController(PersonService personService) {
-        this.personService = personService; // vantagem de injetar assim é que facilita os testes unitarios
-    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
